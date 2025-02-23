@@ -48,6 +48,8 @@ Follow these steps to get the project running on your local machine.
    source venv/bin/activate  # For Linux/macOS
    venv\Scripts\activate     # For Windows
 3: Install required dependencies:
+
+   ```bash
    pip install -r requirements.txt
    Create a config.py file and add your API key:
 
@@ -55,8 +57,10 @@ Follow these steps to get the project running on your local machine.
    In the project directory, create a config.py file:
 
    API_KEY = "your_openweathermap_api_key"
+
 4: Run the Flask application:
 
+   ```bash
    python app.py
    Visit the app in your web browser:
 
@@ -64,18 +68,14 @@ Follow these steps to get the project running on your local machine.
    
 5: Deployment
 The application is hosted on an AWS EC2 instance. If you'd like to deploy this app to your own EC2 instance:
+   - Create an EC2 instance in your AWS account (free tier should work).
+   - SSH into your EC2 instance and install Python, Flask, and any necessary dependencies.
+   - Upload the project files to the EC2 instance.
+   - Run the Flask application on your EC2 instance.
+   - Ensure that port 5000 is open in your EC2 instance's security group settings to allow access from the web.
 
-   Create an EC2 instance in your AWS account (free tier should work).
-   SSH into your EC2 instance and install Python, Flask, and any necessary dependencies.
-   Upload the project files to the EC2 instance.
-   Run the Flask application on your EC2 instance.
-   Ensure that port 5000 is open in your EC2 instance's security group settings to allow access from the web.
-   Contributing
+Contributing
    Feel free to fork this project, make changes, and submit pull requests. Contributions are welcome!
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-API Key Handling
-For security reasons, the OpenWeatherMap API key is not committed to the repository. Instead, it is stored in a local config.py file. Make sure to create your own API key and store it securely in config.py.
-
