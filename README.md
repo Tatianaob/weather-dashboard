@@ -49,21 +49,14 @@ Follow these steps to get the project running on your local machine.
    venv\Scripts\activate     # For Windows
 3: Install required dependencies:
 
-   ```bash
    pip install -r requirements.txt
    Create a config.py file and add your API key:
 
    Go to OpenWeatherMap and sign up to get your free API key.
-   In the project directory, create a config.py file:
-
-   API_KEY = "your_openweathermap_api_key"
 
 4: Run the Flask application:
-
-   ```bash
    python app.py
    Visit the app in your web browser:
-
    Open http://127.0.0.1:5000/ to access the weather dashboard.
    
 5: Deployment
@@ -74,8 +67,8 @@ The application is hosted on an AWS EC2 instance. If you'd like to deploy this a
    - Run the Flask application on your EC2 instance.
    - Ensure that port 5000 is open in your EC2 instance's security group settings to allow access from the web.
 
-Contributing
+## Contributing
    Feel free to fork this project, make changes, and submit pull requests. Contributions are welcome!
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
