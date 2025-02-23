@@ -1,0 +1,3 @@
+# Ignore the config.py file or any file where the API key is stored
+config.py
+

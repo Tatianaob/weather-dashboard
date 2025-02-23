@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.card {
+    border-radius: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #a2d2ff, #cdb4db);
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.input-group input {
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.btn-primary {
+    border-radius: 30px;
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.display-4 {
+    font-weight: bold;
+    color: #fff;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.fas {
+    animation: rotateIn 2s linear;
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+img {
+    margin-top: 15px;
+    width: 100px;
+}
+
